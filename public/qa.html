@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questionaire</title>
+</head>
+
+<body>
+
+    <form action="mailto:nsadili@ada.edu.az" method="POST" enctype="text/plain">
+    <!-- <form action="/" method="POST"> -->
+
+        <label for="fname">FirstName:</label>
+        <input type="text" id="fname" name="fname" required placeholder="Enter first name"> <br>
+
+        <label for="lname">LastName:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name"> <br>
+
+        <fieldset>
+            <legend>Select your gender</legend>
+            <input type="radio" name="gender" id="gender_male" value="MALE" checked /> <label for="gender_male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="gender_female" value="FEMALE" /> <label
+                for="gender_female">Female</label>
+            <br>
+            <input type="radio" name="gender" id="gender_other" value="OTHER" /> <label for="gender_other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which programming languages you know</legend>
+            <label for="lang_java"><input type="checkbox" name="lang" id="lang_java" value="JAVA"> JAVA</label>
+            <input type="checkbox" name="lang" id="lang_python" value="PYTHON"> <label for="lang_python">PYTHON</label>
+            <input type="checkbox" name="lang" id="lang_php" value="PHP"> <label for="lang_php">PHP</label>
+        </fieldset>
+
+        <input type="submit" value="SUBSEND">
+
+    </form>
+
+</body>
+
+</html>
